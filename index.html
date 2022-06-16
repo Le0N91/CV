@@ -36,11 +36,6 @@
     <div class="work">
         <h2>Опыт работы</h2>
         <table>
-                <tr>
-                    <th>Организация</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                </tr>
             <tr>
                 <td>АО "Кемеровоспецстрой"</td>
                 <td>лаборант</td>
@@ -61,34 +56,43 @@
 
     <div class="stream"> 
         <h2>Стримы</h2>
-        <a href="youtube.html" target="_blank">Посмотреть список</a>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.youtube.com/watch?v=h3mv0PsmO2o" target="_blank">Battlefield 5 | СНАЙПЕР | ЛУЧШИЕ ВЫСТРЕЛЫ</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=kROEFbIY9ZA&t=2169s" target="_blank">Battlefield V - Стрим с разработчиком</a>
+            </li>
+        </ul>
     </div>
 
 <div class="form">
     <h2>Связаться со мной</h2>
+
     <form action="">
-        <label for="name">Ваше имя:</label>
-      <input type="text" id="name"
-      placeholder="Введите ваше имя">  
-    
-      <br> 
-    
-      <label for="email">Ваш email:</label>
-      <input type="email" id="email"
-      placeholder="Введите ваш email"> 
-      
-      <br>
-      
-      <label for="text">Ваше сообщение:</label>
-      <br>
-      <textarea id="text" cols="15" rows="5"></textarea>
-    
-    <br>
-    
-      <input type="submit" value="Связаться">
+        <div class="row">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name"
+                placeholder="Введите ваше имя">  
+        </div>
+        <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email"
+            placeholder="Введите ваш email"> 
+        </div>
+        </div>
+    <div class="form-group">
+        <label for="text">Ваше сообщение:</label>
+        <textarea id="text" cols="15" rows="2"></textarea>
+    </div>
+
+      <input class="btn" type="submit" value="Связаться!">
 </div>
 </div>
 </form>
+
+<div style="margin-bottom: 500px;;"></div>
 </body>
 </html> 
 

@@ -3,7 +3,7 @@
 body {
     background-color: #f1f1f1;
     color: #0f141e;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     font-family: 'roboto', sans-serif;
 }
@@ -34,6 +34,7 @@ a:visited {
 .info {
     display: flex;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .info-text {
@@ -58,22 +59,121 @@ a:visited {
   }
 
 .hobbi {
-    background-color: #c5cfe4;
+    background-color: #FFF9DC;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.work {
+    background-color: #E5FFE7;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.stream {
+    background-color: #FFE5E5;
     border-radius: 20px;
     padding: 15px 20px;
 }
 
-.work {
-    background-color: aqua;
-    border-radius: 20px;
+.link-list {
+  list-style: none;
+  padding: 0;
 }
 
-.stream {
-    background-color: aquamarine;
-    border-radius: 20px;
+.link-list li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
 }
 
 .form {
     text-align: center;
 }
 
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+.hobbi {
+  padding: 15px 20px;
+}
+
+.hobbi li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.hobbi ol {
+  padding: 0 20px;
+}
+
+.work table {
+  width: 100%;
+}
+
+.work td {
+  padding-bottom: 10px;
+}
+
+.work td:nth-child(3),
+.work td:nth-child(2) {
+  color: #86898f;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > .form-group {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+  margin-right: 0;
+}
+
+.btn {
+display: block;
+background: #111;
+color: #fff;
+padding: 15px 20px;
+border: none;
+font-family: inherit;
+cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
